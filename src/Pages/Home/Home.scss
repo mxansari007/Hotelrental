@@ -1,0 +1,86 @@
+@import '../../main.scss';
+
+$font-color:#071952;
+
+.Home-container{
+    background-color: #cfd5de;
+    color:#071952;
+}
+
+.Home-content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+}
+
+.Home-heading{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    padding:25px;
+}
+
+.Home-nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding:20px;
+}
+
+.nav-btn{
+    padding:7px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50px;
+    color:rgb(75, 75, 75);
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover{
+        color: white;
+        background-color:$primary-blue ;
+    }
+}
+
+.view-btn{
+    padding: 7px 10px;
+    border: 2px solid $primary-blue;
+    border-radius: 50px;
+    font-weight: 500;
+    color: $primary-blue;
+    background-color: #cfd5de;
+    cursor: pointer;
+    &:hover{
+        color: white;
+        background-color:$primary-blue;
+    }
+}
+
+.active-btn{
+    color: white !important;
+    background-color:$primary-blue !important;
+}
+
+.Show-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    .show-more-btn{
+        padding:7px 10px;
+        border-radius: 50px;
+        border: 2px solid $primary-blue;
+        font-weight: 500;
+        color: white;
+        background-color: $primary-blue;
+        cursor: pointer;
+        &:hover{
+            background-color: #cfd5de;
+            color:$primary-blue;
+        }
+    }
+}

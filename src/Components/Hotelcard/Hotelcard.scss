@@ -1,0 +1,134 @@
+@import '../../main.scss';
+
+.hotel-card-container{
+  font-size: 0.8rem;
+    position: relative;
+    width: 300px;
+    padding:20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: $card-shadow;
+    background-color: white;
+}
+
+.hotel-card-carousel{
+    width:250px;
+    height: auto;
+    margin: auto;
+}
+
+
+.swiper {
+    width: 250px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: $gold !important;
+  }
+  
+  .hotel-card-status{
+    position: absolute;
+    margin-top: 30px;
+    top:0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:$primary-blue;
+    width: 80%;
+    .heart-icon{
+      padding:5px 10px;
+      background-color: white;
+      border-radius: 50%;
+    }
+    p{
+      font-weight: 500;
+      padding:5px;
+      margin-left: 15px;
+      color:$primary-blue;
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+
+  .hotel-card-title{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-card-desc{
+    margin: 8px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hotel-card-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgb(212, 212, 212);
+    padding-top: 10px;
+  }
+
+
+  .category{
+    position: relative;
+    bottom: 30px;
+    right: 25px;
+    width:78px;
+    padding: 7px 6px;
+    color:white;
+    border-radius: 0px 5px 5px 0;
+    background-color: $primary-blue;
+    z-index: 2;
+    box-shadow: $card-shadow;
+  }
+
+  
+
+  .price{
+    color:$primary-blue;
+    font-weight: 600;
+  }
+
+  .permonth{
+    font-size: 0.7rem;
+  }
+
+  .hotel-card-btn{
+    padding:5px 8px;
+    background-color: white;
+    border:2px solid $primary-blue;
+    border-radius: 50px;
+    color:$primary-blue;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover{
+      color:white;
+      background-color: $primary-blue;
+    }
+  }
+
+  .empty{
+    margin-bottom: 35px;
+  }
